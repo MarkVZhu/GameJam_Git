@@ -76,7 +76,7 @@ public class PlatformPlayerControl : MonoBehaviour
         Ray2D ray = new Ray2D(transform.position, transform.up);
         Debug.DrawRay(ray.origin, ray.direction * (checkLenght) * -1, Color.red);
 
-        Debug.Log(hit.collider != null);
+        //Debug.Log(hit.collider != null);
         if (hit.collider != null)
             return true;
 
