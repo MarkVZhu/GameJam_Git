@@ -5,7 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: e5a088a8ee47dcc4aad695d7befd6fdf
+  - enabled: 1
+    path: Assets/Scenes/fexla levels/level1.unity
+    guid: e62feb68a6d922d458ff66062da69f5b
+  - enabled: 1
+    path: Assets/Scenes/fexla levels/level4.unity
+    guid: b0636f6986508c14aa58e7dbaebd05d2
+  - enabled: 1
+    path: Assets/Scenes/PlatformMove 1.unity
+    guid: 1c04df3cbff596443882ae729804900f
+  - enabled: 1
+    path: Assets/Scenes/fexla levels/level2.unity
+    guid: ea5061046c3e2294a94b33f4d84c8277
+  - enabled: 1
+    path: Assets/Scenes/fexla levels/level3.unity
+    guid: f65b4eaa87508f34fa3af472be2dda8f
+  - enabled: 1
+    path: Assets/Scenes/PlatformMove 2.unity
+    guid: 35fb71517a70799408e30a78e0974795
   m_configObjects: {}
