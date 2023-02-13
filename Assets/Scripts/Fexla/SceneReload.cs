@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Fexla {
+namespace Mark {
     public class SceneReload : MonoBehaviour {
         private void Update() {
             if (Input.GetKeyDown(KeyCode.Escape)) {

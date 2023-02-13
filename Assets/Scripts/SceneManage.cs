@@ -12,10 +12,15 @@ public class SceneManage : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null)
+        if (instance == null)
+        {
+            instance = this;
+            //DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
             Destroy(gameObject);
-        instance = this;
-        //DontDestroyOnLoad(gameObject);
+        }
     }
 
     private void Start()

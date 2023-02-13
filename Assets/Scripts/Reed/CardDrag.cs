@@ -17,7 +17,10 @@ public class CardDrag : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        powerText.text = power.ToString("f1");
+        if(power > 1)
+            powerText.text = ((int)power).ToString();
+        else
+            powerText.text = "1/" + ((int)(1 /power)).ToString();
     }
 
     // Update is called once per frame

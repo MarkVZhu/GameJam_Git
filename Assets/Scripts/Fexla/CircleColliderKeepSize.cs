@@ -1,7 +1,7 @@
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Fexla {
+namespace Mark {
     public class CircleColliderKeepSize : MonoBehaviour {
         public float radius = 0.1f;
 

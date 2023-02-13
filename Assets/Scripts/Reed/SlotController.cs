@@ -1,4 +1,4 @@
-using Fexla;
+using Mark;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -58,7 +58,7 @@ public class SlotController : MonoBehaviour
             {
                 isMoving = false;
                 currentCard = clickCard;
-                player.GetComponent<PlayerStateControl>().power = 1/currentCard.GetComponent<CardDrag>().power;
+                player.GetComponent<PlayerControl>().power = 1/currentCard.GetComponent<CardDrag>().power;
                 clickCard = null;
             }
         }

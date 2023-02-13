@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour {
-    private static AudioManager instance;
-
-    public static AudioManager Instance => instance;
+    
+    public static AudioManager instance;
 
     private AudioSource managerAudio;
 
@@ -26,11 +25,15 @@ public class AudioManager : MonoBehaviour {
     }
 
     private void Awake() {
-        if (instance != null)
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
             Destroy(gameObject);
-
-        instance = this;
-        DontDestroyOnLoad(gameObject);
+        }
     }
 
 

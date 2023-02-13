@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Fexla {
+namespace Mark {
     public class ShaderControl : MonoBehaviour {
         private static readonly int Lrud = Shader.PropertyToID("_lrud");
         public SpriteRenderer spriteRenderer;

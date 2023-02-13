@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Fexla {
+namespace Mark {
     public class EndControl : MonoBehaviour {
 
         private void OnTriggerEnter2D(Collider2D col) {
@@ -21,14 +21,14 @@ namespace Fexla {
         }
 
         public void Previous() {
-            if(AudioManager.Instance)
-                AudioManager.Instance.PlaySE(AudioManager.SoundEffect.Card);
+            if(AudioManager.instance)
+                AudioManager.instance.PlaySE(AudioManager.SoundEffect.Card);
             SceneManage.instance.LastScene();
         }
 
         public void Next() {
-            if (AudioManager.Instance)
-                AudioManager.Instance.PlaySE(AudioManager.SoundEffect.Card);
+            if (AudioManager.instance)
+                AudioManager.instance.PlaySE(AudioManager.SoundEffect.Card);
             SceneManage.instance.NextScene();
         }
     }
