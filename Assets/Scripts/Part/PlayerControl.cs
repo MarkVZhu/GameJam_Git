@@ -112,7 +112,7 @@ namespace Mark {
                     if (value) 
                     {
                         animator[0].Play("PlayerRotate");
-                        Debug.Log("Player Rotate 1");
+                        //Debug.Log("Player Rotate 1");
                     } 
                     else 
                     {

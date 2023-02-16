@@ -28,12 +28,6 @@ public class SceneManage : MonoBehaviour
         StartCoroutine(SceneFadeIn());
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-            ReloadScene();
-    }
-
     public void ReloadScene()
     {
         StartCoroutine(SceneFadeOutLoad(0));
